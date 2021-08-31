@@ -1,0 +1,55 @@
+/* interests */
+.user-interests{
+  width: 100%;
+  max-width: 550px;
+  min-width: 230px;
+  height: 1200;
+  border: 1px solid rgb(155, 153, 150);
+  border-radius: 5px;
+  color: black;
+}
+
+.user-interests{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  margin:10px;
+  height: 1000px;
+}
+#interest-text{
+  text-align: center;
+  color:rgb(87, 5, 238);
+  display: flex;
+  width:100%;
+  max-width: 400px;
+  height: 30px;
+  font-size: 30px;
+  /* border:1px solid black; */
+  margin:10px auto 10px 50px;
+  padding-left: 50px;
+}
+
+.interest-icons{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  max-width: 200px;
+  padding:15px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 55px;
+  margin:10px 40px 10px 10px;
+  color: black;
+  background-color: rgb(175, 175, 192);
+  border:1px solid rgb(126, 124, 124);
+  text-transform:capitalize;
+  
+}         
+.interest-icons:hover{
+  background-color: rgb(101, 101, 129);
+  box-shadow: 5px 5px 20px rgb(138, 138, 170);
+
+}
+.my-iconi{
+  color: black;
+}    

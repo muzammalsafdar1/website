@@ -1,0 +1,36 @@
+/* online friends and ads */
+.online-friends{
+  width: 230px;
+  height: 700px;
+  border:1px solid rgb(161, 161, 165);
+  border-radius: 5px;
+  color: black;
+  overflow-y: scroll;
+  margin:10px;
+  margin-top: -100px;
+}
+.online-friends::-webkit-scrollbar{
+  width:0px;
+}
+.online-friends:hover::-webkit-scrollbar{
+  width:10px;
+}
+
+.online-friends::-webkit-scrollbar-track{
+  width:10px;
+  background-color: rgb(248, 245, 245);
+  border-radius: 10px;
+}
+.online-friends::-webkit-scrollbar-thumb{
+  width:10px;
+  background-color: rgb(238, 168, 99);
+  border-radius: 5px;
+}
+.user-profile-ad{
+  width:230px;
+  height: 630px;
+  border:1px solid rgb(99, 99, 100);
+  border-radius: 5px;
+  color: black; 
+  margin:20px 0px 0px 10px;
+}

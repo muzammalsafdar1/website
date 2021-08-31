@@ -1,0 +1,1047 @@
+  /* update your post form  */
+
+  .user-updat-status{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    /* border:1px solid black; */
+  }
+  .update-post-form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    /* border:5px solid rgb(221, 27, 27); */
+  }
+
+  .submit-post-btn{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.friends-edit{
+  width:50px; height:50px; position:relative;top:0px; left:-20px; box-sizing:border-box;padding-top:10px;padding-left: 15px;
+  border-radius: 5px;
+}
+.friends-edit:hover{
+  background-color: rgb(150, 144, 144);
+  cursor: pointer;
+}
+.cover-picture{
+  width: 100%;
+  min-width: 230px;
+  object-fit: cover;
+  height: 300px;
+  border-top:1px solid rgb(14, 190, 196);
+  border-bottom:1px solid rgb(14, 190, 196);
+  
+}
+.edit-cover-picture{
+  width:40px;
+  height: 40px;
+  border:1px solid black;
+  position: relative;
+  top:-370px;
+  left:100px;
+  padding:5px 10px 15px 10px;
+  border-radius: 5px;
+}
+.edit-cover-picture:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+
+}
+.edit-profile-info{
+  color: black;
+}
+.full-screen, .full-screen-for-profile, .full-sceen-name-status, .full-screen-for-aboutme, .full-screen-user-interest{
+  display:none;
+  width:100%;
+  max-width: 13500px;
+  min-width: 320px;
+  height: 100%;
+  background-color: rgba(199, 195, 195,0.5);
+  position: fixed;
+  z-index: 2;
+  top:0;
+  left: 0;
+}
+.upload-picture-div, .upload-picture-div-profile, .edit-name-status-info, .user-interest-popup-div{
+  display:none;
+  width: 100%;
+  max-width:700px;
+  min-width: 320px;
+  height: 500px;
+  position: fixed;
+  z-index: 3;
+  top:15%;
+  left:20%;
+  background-color: rgba(241, 157, 87,0.9);
+  border:1px solid rgb(196, 194, 194);
+  border-radius: 5px;
+  flex-direction: column;
+  overflow-y: scroll;
+  
+}
+.about-me-div{
+  display:none;
+  width: 100%;
+  max-width:700px;
+  min-width: 320px;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top:1%;
+  left:20%;
+  background-color: rgba(241, 157, 87,0.9);
+  border:1px solid rgb(196, 194, 194);
+  border-radius: 5px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.edit-cover-picture-form, .edit-profile-picture-form, .edit-all-info, .edit-aboutme-form{
+  width: 100%;
+  max-width:300px;
+  height: 150px;
+  /* border:1px solid green; */
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  
+}
+.edit-aboutme-form{
+  width: 100%;
+  max-width:300px;
+  height: 100%;
+  /* border:1px solid green; */
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  
+}
+.submit-cover-picture, .submit-profile-picture, .submit-namestatusinfo , .submit-aboutme{
+  border: 0px;
+  background-color: transparent;
+  width:100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 50px;
+  border: 1px solid rgb(233, 222, 222);
+  background-color: rgb(105, 105, 240);
+  border-radius: 5px;
+  font-size: 18px;
+}
+.edit-coverpicture, .edit-profilepicture, .edit-namestatusinfo{
+  border: 0px;
+  background-color: transparent;
+  width:100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 50px;
+  font-size: 18px;
+}
+.display-edited-picture, .display-edited-profile-picture{
+  width:100%;
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edit-status-name{
+  width:40px; 
+  height: 40px;
+  /* border:1px solid black; */
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  top:-40px;
+  left:40px;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 7px 7px 7px 10px;
+  
+}
+.edit-status-name:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+}
+.profile-info-edit{
+  
+  position: relative;
+}
+.about-me-popup-btn{
+  width:40px; 
+  height: 40px;
+  /* border:1px solid black; */
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  top:-65px;
+  left:350px;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 5px 7px 7px 10px;
+  
+}
+.about-me-popup-btn:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+}
+
+.profile-info-edit{
+  width:40px;
+  height:40px;
+  /* border:1px solid black; */
+  color:black;
+  padding-left:8px;
+  padding-top:5px;
+ box-sizing:border-box;
+ border-radius:5px;
+ position:relative;
+ top:0px;
+ left:70px;
+}
+.profile-info-edit:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+  cursor: pointer;
+}
+
+
+                      
+                  
+                            /* about me css */
+.key-value-div{
+  width:400px;
+  margin-left: -70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 100%;
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: row;
+}
+select, option{
+  width:250px;
+  height: 35px;
+}
+
+.key-words{
+  width:150px;
+  height: 100%;
+  /* border:1px solid green; */
+  display: flex;
+  flex-direction: column;
+}
+.option-values{
+  width:250px;
+  height: 100%;
+  /* border:1px solid blue;s */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.option-words{
+  width:150px;
+  height: 80px;
+  /* border:1px solid brown; */
+  box-sizing: border-box;
+  padding:8px 0px 0px 50px;
+}
+.select-values{
+  height: 80px;
+  /* border:1px solid black; */
+}
+.languages{
+  height: auto;
+}
+.about-me-div::-webkit-scrollbar{
+ width:8px;
+ background-color: transparent;
+}
+.about-me-div:hover::-webkit-scrollbar-track{
+  background-color: rgb(248, 246, 246);
+  border-radius: 10px;
+}
+.about-me-div:hover::-webkit-scrollbar-thumb{
+  background-color: rgb(206, 203, 203);
+  border-radius: 10px;
+}
+
+                        /* profile picture change */
+
+.profile-picture-change-icon{
+  width:40px;
+  height: 40px;
+  border:1px solid black;
+  position: relative;
+  top:-220px;
+  left:35px;
+  padding:5px 10px 15px 10px;
+  border-radius: 5px;
+}
+.profile-picture-change-icon:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+}
+
+
+
+.cover-picture-div{
+  width: 100%;
+  min-width: 230px;
+  object-fit: cover;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-picture-div{
+  width:150px;
+  height: 150px;
+  /* border:1px solid red; */
+  position: absolute;
+  top:300px;
+  left: 30px;
+}
+.profile-picture{
+  width:100%;
+  min-width: 150px;
+  max-width: 150px;
+  height: 150px;
+}
+.display-name-status{
+  width: 100%;
+  /* color: black; */
+  padding-left: 200px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  min-width: 230px;
+  margin-left: auto;
+  height: 100%;
+  max-height: 300px;
+  font-size: 30px;
+  border-bottom: 1px solid rgb(214, 216, 214);
+  display:flex;
+  flex-direction: column;
+}
+.user-name{
+  color:black;
+}
+.status-container{
+  display: flex;
+  flex-direction: row;
+}
+.about-user-info{
+  color:black;
+  font-size:17px;
+}
+.status{
+  color:black;
+  font-size: 23px;
+}
+#status-icon{
+  color:green;
+  font-size: 12px;
+}
+.last-online{
+  color:black;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 5px;
+  color: blue;
+}
+span{
+  color: red;
+}
+
+
+                    /* friends pictures and online friends */
+.pics-friends-online{
+  width: 100%;
+  max-width: 1550px;
+  min-width: 230px;
+  height: 100%;
+  min-height: 300px;
+  /* max-height: 500px; */
+  color: black;
+  /* border:1px solid black; */
+  display:flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.pic-fr-int-abt{
+  width: 100%;
+  max-width: 1200px;
+  min-width: 230px;
+  height: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.pics-friends{
+  width: 100%;
+  max-width: 1200px;
+  min-width: 230px;
+  height: 100%;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: row;
+}
+.interests-about-me{
+  width: 100%;
+  max-width: 1200px;
+  min-width: 230px;
+  height: 1000px;
+  /* border: 10px solid rgb(10, 219, 97); */
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+}
+
+
+.users-pics-display{
+  width: 100%;
+  max-width: 600px;
+  min-width: 230px;
+  padding:5px;
+  border-radius: 5px;
+  object-fit: cover;
+  height: 100%;
+  border: 1px solid rgb(219, 10, 202);
+  color: black;
+}
+.users-friends{
+  width: 100%;
+  max-width: 600px;
+  min-width: 230px;
+  height: 100%;
+  border: 1px solid rgb(4, 238, 247);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-left: 5px;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.friend-first-row{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.friend-second-row{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;  
+}
+.friend-third-row{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;  
+}
+
+.friends{
+  width:100%;
+  max-width:80px;
+  height: 80px;
+  border:1px solid blue;
+  margin:5px auto 5px auto;
+  border:1px solid rgb(185, 182, 182);
+  border-radius: 5px;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+                            /* interests */
+
+
+
+.user-interest-pop-up{
+  width:40px; 
+  height: 40px;
+  /* border:1px solid black; */
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  top:10px;
+  left:320px;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 4px 7px 7px 10px;
+ 
+}
+.user-interest-pop-up:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+}
+.user-interest-form::-webkit-scrollbar{
+  width:0px;
+}
+.user-interest-form:hover::-webkit-scrollbar{
+  width:10px;
+}
+
+.user-interest-form::-webkit-scrollbar-track{
+  width:10px;
+  background-color: rgb(248, 245, 245);
+  border-radius: 10px;
+}
+.user-interest-form::-webkit-scrollbar-thumb{
+  width:10px;
+  background-color: rgb(206, 204, 204);
+  border-radius: 5px;
+}
+
+.user-interest-form{
+  width:100%;
+  max-width: 500px;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction:column;
+  /* border:1px solid red; */
+  height: 500px;
+  overflow-y:scroll;
+ 
+}
+.only-checkbox{
+  width:100%;
+  max-width: 500px;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  height: 800px;
+  /* border:1px solid black; */
+}
+
+.user-interest-switch{
+  width:200px;
+  height: 70px;
+  /* border: 1px solid black; */
+  padding: 20px;
+  margin-left: 30px;
+}
+.submit-checkbox{
+  color:black;
+  width:100%;
+  max-width: 500px;
+  min-width: 250px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgb(173, 172, 172);
+  font-weight: bold;
+  background-color: rgb(51, 164, 199);
+}
+.submit-checkbox:hover{
+  background-color: rgb(52, 199, 243);
+
+}
+
+.user-interests{
+  width: 100%;
+  max-width: 550px;
+  min-width: 230px;
+  height: 100%;
+  border: 1px solid rgb(155, 153, 150);
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  margin:10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#interest-text{
+  text-align: center;
+  color:rgb(87, 5, 238);
+  display: flex;
+  width:100%;
+  max-width: 400px;
+  height: 30px;
+  font-size: 30px;
+  /* border:1px solid black; */
+  margin:10px auto 10px 50px;
+  padding-left: 50px;
+}
+
+.interest-icons{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  max-width: 200px;
+  padding:15px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 55px;
+  margin:10px 40px 10px 10px;
+  color: black;
+  background-color: rgb(175, 175, 192);
+  border:1px solid rgb(126, 124, 124);
+  text-transform:capitalize;
+  
+}         
+.interest-icons:hover{
+  background-color: rgb(101, 101, 129);
+  box-shadow: 5px 5px 20px rgb(138, 138, 170);
+
+}
+.my-iconi{
+  color: black;
+}    
+
+
+                                      /* about me */
+
+.user-about-me{
+  width: 100%;
+  max-width: 550px;
+  min-width: 230px;
+  height: 1000px;
+  /* max-height: 800px; */
+  border: 1px solid rgb(160, 157, 154);
+  border-radius: 5px;
+  margin:10px;
+  color: black;
+}
+
+.about-me-items{
+  color:black;
+  /* border:1px solid blue; */
+  padding-left:70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  list-style: none;
+}
+.about-me-text{
+  text-align:center; color:blue; font-size:35px;
+}
+
+
+                              /* online friends and ads */
+.online-friends{
+  width: 230px;
+  height: 700px;
+  border:1px solid rgb(161, 161, 165);
+  border-radius: 5px;
+  color: black;
+  overflow-y: scroll;
+  margin:10px;
+}
+.online-friends::-webkit-scrollbar{
+  width:0px;
+}
+.online-friends:hover::-webkit-scrollbar{
+  width:10px;
+}
+
+.online-friends::-webkit-scrollbar-track{
+  width:10px;
+  background-color: rgb(248, 245, 245);
+  border-radius: 10px;
+}
+.online-friends::-webkit-scrollbar-thumb{
+  width:10px;
+  background-color: rgb(238, 168, 99);
+  border-radius: 5px;
+}
+.user-profile-ad{
+  width:230px;
+  height: 630px;
+  border:1px solid rgb(99, 99, 100);
+  border-radius: 5px;
+  color: black; 
+  margin:20px 0px 0px 10px;
+}
+
+
+                        /* display users posts */
+
+
+
+
+                                      /* post pop up  */
+
+
+
+
+  
+
+
+
+.display-user-posts{
+ width:100%;
+ max-width: 800px;
+ min-width: 230px;
+ height: 100%;
+ margin: 30px auto 10px auto;
+ /* border:1px solid rgb(211, 208, 208); */
+ background-color: white;
+ border-radius: 5px;
+ color: black;
+ display: flex;
+ flex-direction: column;
+}
+.all-post-cont{
+  width:100%;
+  max-width: 800px;
+  min-width: 230px;
+  height: 100%;
+  margin:0px 0px 40px 0px;
+  border:1px solid rgb(219, 217, 217);
+  background-color: rgb(168, 168, 235);
+  border-radius: 5px;
+}
+.post-container{
+  width:100%;
+  max-width: 500px;
+  min-width: 230px;
+  height: 100%;
+  margin:40px 150px 40px 150px;
+  /* border:10px solid rgb(165, 163, 163); */
+  border:1px solid black;
+  display:flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.user-content{
+  width: 100%;
+  max-width: 500px;
+  min-width: 230px;
+  height: 400px;
+  /* border:1px solid rgb(161, 161, 161); */
+  border:1px solid red;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 5px; */
+}
+.like-comment-share-container{
+  width: 100%;
+  max-width: 500px;
+  min-width: 230px;
+  border:1px solid green;
+  display: flex;
+  flex-direction: row;
+  margin-top: -10px;
+}
+.like-div{
+  width:100%;
+  max-width: 167px;
+  min-width: 76px;
+  /* border:1px solid rgb(239, 239, 241); */
+  background-color: rgb(93, 93, 216);
+  color:black;
+  box-sizing: border-box;
+  padding:10px 0px 0px 50px;
+}
+.like-div:hover{
+    border:1px solid rgb(239, 239, 241);
+    background-color: rgb(128, 128, 211);
+    color:white;
+}
+.comment-div{
+  width:100%;
+  max-width: 167px;
+  min-width: 76px;
+  /* border:1px solid rgb(239, 239, 241); */
+  background-color: rgb(93, 93, 216);
+  color:black;
+  box-sizing: border-box;
+  padding:10px 0px 0px 40px;
+  
+}
+.comment-div:hover{
+  border:1px solid rgb(239, 239, 241);
+  background-color: rgb(128, 128, 211);
+  color:white;
+}
+
+.share-div{
+  width:100%;
+  max-width: 167px;
+  min-width: 76px;
+  /* border:1px solid rgb(239, 239, 241); */
+  background-color: rgb(93, 93, 216);
+  color:black;
+  box-sizing: border-box;
+  padding:10px 0px 10px 40px;
+}
+.share-div:hover{
+  border-left: 1px solid white;
+  background-color: rgb(128, 128, 211);
+  color:white;
+}
+.comment-container{
+  width: 100%;
+  height: 100%;
+  display:none;
+  max-width: 500px;
+  min-width: 230px;
+  overflow:hidden;
+  /* border:1px solid brown; */
+}
+.comment-pic-text-container{
+  width:100%;
+  max-width: 500px;
+  min-width: 230px;
+  overflow:hidden;
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: row;
+}
+.comment-pic{
+  width:100%;
+  height: 100%;
+  max-width:40px;
+  max-height:40px;
+  object-fit: cover;
+  padding:2px;
+  border:1px solid blue;
+  margin:5px;
+}
+.user-comment-txt{
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  /* border:1px solid red; */
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.options-container{
+  width: 100%;
+  height: 30px;
+  /* border:1px solid orangered; */
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+a{
+  text-decoration: none;
+}
+.comment-like{
+  color: black;
+  max-width: 125px;
+  width:100%;
+  /* border:1px solid green; */
+  padding-left:35px;
+  padding-top: 5px;
+  height: 25px;
+}
+.comment-like:hover{
+  background-color: rgb(128, 128, 211);
+  color:white;
+}
+.comment-reply{
+  color:black;
+  max-width: 125px;
+  width:100%;
+  height: 25px;
+  /* border:1px solid green; */
+  padding-left:35px;
+  padding-top: 5px;
+}
+.comment-reply:hover{
+  background-color: rgb(128, 128, 211);
+  color:white;
+}
+.comment-delete{
+  color:black;
+  max-width: 125px;
+  width:100%;
+  /* border:1px solid green; */
+  padding-left:35px;
+  height: 25px;
+  padding-top: 5px;
+}
+.comment-delete:hover{
+  background-color: rgb(128, 128, 211);
+  color:white;
+}
+.comment-edit{
+  color:black;
+  max-width: 125px;
+  width:100%;
+  /* border:1px solid green; */
+  padding-left:35px;
+  padding-top: 5px;
+  height: 25px;
+}
+.comment-edit:hover{
+  background-color: rgb(128, 128, 211);
+  color:white;
+}
+.comment-text-container{
+  width: 100%;
+  max-width: 500px;
+  min-width: 230px;
+  height: 100%;
+  max-height: 280px;
+  /* border:1px solid rgb(52, 206, 5); */
+}
+
+#comment{
+  width:500px;
+  max-width: 500px;
+  min-width: 230px;
+  height: auto;
+  max-height: 280px;
+  color: black;
+  line-height: 20px;
+  font-size: 20px;
+  overflow-y: hidden;
+  
+}
+
+
+
+
+
+@media screen and (max-width:1120px){
+  .pics-friends{
+    display: flex;
+    flex-direction: column;
+  }
+  .users-pics-display{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .users-friends{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width:1000px){
+  .upload-picture-div{
+    left: 10%;
+  }
+  .user-interest-popup-div{
+    margin-left:-100px;
+
+  }
+}
+@media screen and (max-width:820px){
+  .display-name-status{
+    height: 100%;
+  }
+   .pics-friends-online{
+     display: flex;
+     flex-direction: column;
+     margin-top: 130px;
+     height: 100%;
+
+   }
+   .pic-fr-int-abt{
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+
+   }
+   .pics-friends{
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+
+   }
+   .interests-about-me{
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+
+   }
+   
+   .online-friends{
+     margin-left: auto;
+     margin-right: auto;
+     height: 100%;
+     width:100%;
+   }
+   .users-pics-display{
+     margin-left: auto;
+     margin-right: auto;
+     height: 100%;
+     width:100%;
+   }
+   
+   .user-about-me{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width:100%;
+   }
+   .post-container{
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .user-profile-ad{
+     margin-left: auto;
+     margin-right: auto;
+   }
+ .upload-picture-div{
+   left: 1%;
+ }
+ .user-interest-popup-div{
+  margin-left:-100px;
+}
+
+}
+@media screen and (max-width:630px){
+  .users-pics-display{
+    padding:0px;  
+  }
+  .edit-status-name{
+    position: relative;
+    top:-40px;
+    left:-10px;
+  }
+  .user-interest-popup-div{
+    margin-left:-100px;
+  }
+}
+@media screen and (max-width:430px){
+  #comment{
+    width:410px;
+  }
+  .edit-cover-picture{
+    top:-520px;
+  }
+}
+
+

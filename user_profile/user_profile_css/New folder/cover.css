@@ -1,0 +1,33 @@
+
+.cover-picture{
+  width: 100%;
+  min-width: 230px;
+  object-fit: cover;
+  height: 300px;
+  border-top:1px solid rgb(14, 190, 196);
+  border-bottom:1px solid rgb(14, 190, 196);
+  
+}
+.edit-cover-picture{
+  width:20px;
+  height: 20px;
+  border:1px solid black;
+  position: relative;
+  top:-370px;
+  left:100px;
+  padding:10px 10px 15px 15px;
+  border-radius: 5px;
+}
+.edit-cover-picture:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+
+}
+.cover-picture-div{
+  width: 100%;
+  min-width: 230px;
+  object-fit: cover;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+}

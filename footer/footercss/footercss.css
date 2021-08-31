@@ -1,0 +1,199 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+:root{
+  --link-height:300px;
+  --link-width:430px;
+  --bd:1px solid black;
+}
+
+.main-footer{
+width:100%;
+height:300px;
+min-width: 230px;
+max-height:900px ;
+border:1px solid black;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+background-color: rgb(70, 69, 69);
+
+}
+.three-divs{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.links{
+ width: var(--link-width);
+ height: var(--link-height);
+ /* border:var(--bd); */
+ margin:auto;
+ padding-left: 100px;
+ padding-top: 50px;
+ padding-right: auto;
+ background-color: rgb(70, 69, 69);
+}
+.list-items{
+  padding:8px;
+  list-style: none;
+}
+.social-icons{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* border:1px solid black; */
+  padding-left: 0px;
+  margin-left:0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0px;
+  background-color: rgb(70, 69, 69);
+}
+.social-items{
+  /* border: 1px solid green; */
+  padding:15px;
+  margin:auto;
+}
+.social-icons-container{
+
+  padding-left: 0px;
+  background-color: rgb(70, 69, 69);
+}
+.social-items{
+  font-size: 30px;
+}
+
+  .main-footer{
+    height: 300px;
+    /* border:1px solid black; */
+    box-sizing: border-box;
+  }
+  .three-divs{
+    margin:0px;
+    height:300px;
+    width:900px;
+    margin:0px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    /* border:1px solid red;  */
+  
+  }
+  #first-div{
+    /* border:1px solid black; */
+    height: 300px;
+    margin:0px auto 0px auto;
+    box-sizing: border-box;
+  }
+  #second-div{
+    /* border:1px solid black; */
+    margin:0px auto 0px auto;
+    height: 300px;
+    box-sizing: border-box;
+  }
+  #third-div{
+    /* border:1px solid black; */
+    height: 300px;
+    margin:0px auto 0px auto;
+    padding:0px auto 0px auto;
+    box-sizing: border-box;
+  }
+@media screen and (max-width:1310px){
+  .main-footer{
+    height: 700px;
+    /* border:1px solid black; */
+  }
+  .three-divs{
+    margin:0px;
+    height:700px;
+    width:500px;
+    margin:0px auto 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* border:1px solid red;  */
+  
+  }
+  #first-div{
+    /* border:1px solid black; */
+    height: 250px;
+    margin:0px auto 0px auto;
+  }
+  #second-div{
+    /* border:1px solid black; */
+    margin:0px auto 0px auto;
+  }
+  #third-div{
+    /* border:1px solid black; */
+    height: 150px;
+    margin:0px auto 0px auto;
+    padding:0px auto 0px auto;
+  }
+}
+@media screen and (max-width:900px){
+  .main-footer{
+    height: 900px;
+    border:1px solid rgb(187, 42, 42);
+  }
+  .three-divs{
+    margin:0px;
+    height:700px;
+    width:500px;
+    margin:0px auto 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* border:1px solid red;  */
+  
+  }
+  #first-div{
+    /* border:1px solid rgb(212, 33, 33); */
+    height: 250px;
+    margin:0px auto 0px auto;
+    width:200px;
+    margin-left: 0px;
+  }
+  #second-div{
+    /* border:1px solid rgb(245, 27, 27); */
+    margin:0px auto 0px auto;
+    width:200px;
+    margin-left: 10px;
+   
+  }
+  #third-div{
+    /* border:1px solid rgb(211, 32, 32); */
+    height: 150px;
+    margin:0px auto 0px auto;
+    padding:0px auto 0px auto;
+    width:200px;
+    margin-left: 70px;
+  }
+}

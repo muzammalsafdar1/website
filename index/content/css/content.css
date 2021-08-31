@@ -1,0 +1,197 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root{
+  --user-div-width: 320px;
+  --info-width:87.5px;
+}
+
+*{
+  margin:0px; padding:0px;
+}
+.main{
+  margin-top: 30px;
+  height:100%;
+  width:100%;
+  max-width: 1000px;
+  min-width: var(--user-div-width);
+  /* border:1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+}
+.user-div{
+  height: 330px;
+  width: var(--user-div-width);
+  border:1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pic{
+  width: var(--user-div-width);
+  height: 230px;
+  /* border:1px solid brown; */
+}
+.info{
+  height: 100px;
+  width: var(--user-div-width);
+  /* border:1px solid green; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.username{
+  height: 25px;
+  width: var(--user-div-width);
+  border-bottom:1px solid seagreen;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  color:black;
+  font-weight: bolder;
+}
+.details{
+  height: 75px;
+  width: var(--user-div-width);
+  /* border:1px solid black; */
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.text{
+  height: 37.5px;
+  width: var(--user-div-width);
+  /* border:1px solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 17px;
+  
+}
+.age-text{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+  color:black;
+}
+.country-text{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+}
+.gender-text{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+}
+.looking-for-text{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+}
+.data{
+  height: 37.5px;
+  width: var(--user-div-width);
+  /* border:1px solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.age-data{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+}
+.country-data{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+.gender-data{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+}
+.looking-for-data{
+  height: 37.5px;
+  width: var(--info-width);
+  /* border:1px solid green; */
+  text-align: center;
+  padding-top:5px;
+}
+
+.user-pic{
+  background-image: url('girlspics/1.jpg');
+  width:var(--user-div-width);
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width:350px){
+  .main{
+    margin-left: 10px;
+  }
+}
+

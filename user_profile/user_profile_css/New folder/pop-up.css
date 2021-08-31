@@ -1,0 +1,87 @@
+
+.full-screen, .full-screen-for-profile{
+  display:none;
+  width:100%;
+  max-width: 13500px;
+  min-width: 320px;
+  height: 100%;
+  background-color: rgba(199, 195, 195,0.5);
+  position: fixed;
+  top:0;
+  left: 0;
+}
+.upload-picture-div, .upload-picture-div-profile{
+  display:none;
+  width: 100%;
+  max-width:700px;
+  min-width: 320px;
+  height: 500px;
+  position: fixed;
+  top:15%;
+  left:20%;
+  background-color: rgba(241, 157, 87,0.9);
+  border:1px solid rgb(196, 194, 194);
+  border-radius: 5px;
+  flex-direction: column;
+}
+.edit-cover-picture-form, .edit-profile-picture-form{
+  width: 100%;
+  max-width:300px;
+  height: 150px;
+  /* border:1px solid green; */
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+}
+.submit-cover-picture, .submit-profile-picture{
+  border: 0px;
+  background-color: transparent;
+  width:100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 50px;
+  border: 1px solid rgb(233, 222, 222);
+  background-color: rgb(105, 105, 240);
+  border-radius: 5px;
+  font-size: 18px;
+}
+.edit-coverpicture, .edit-profilepicture{
+  border: 0px;
+  background-color: transparent;
+  width:100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 50px;
+  font-size: 18px;
+}
+.display-edited-picture, .display-edited-profile-picture{
+  width:100%;
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+                        /* profile picture change */
+
+.profile-picture-change-icon{
+  width:20px;
+  height: 20px;
+  border:1px solid black;
+  position: relative;
+  top:-220px;
+  left:35px;
+  padding:10px 10px 15px 15px;
+  border-radius: 5px;
+}
+.profile-picture-change-icon:hover{
+  background-color: rgba(24, 23, 23,0.5);
+  border:1px solid white;
+}

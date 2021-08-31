@@ -1,0 +1,50 @@
+body{
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-position: -300px 50px;
+ 
+}
+.header{
+  height: 50px;
+  background-color: rgb(190, 188, 188);
+ 
+}
+.fa-home{
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 30px;
+  color: rgb(102, 91, 91);
+}
+.main{
+  height:1200px ;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border:1px solid rgb(114, 109, 109);
+  background-color: #3d88b9;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.fb{
+  height:40px;
+  background-color: rgb(80, 80, 192);
+  padding-top: 8px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+img{
+  height: 20px;
+  width:20px;
+  margin-right: 20px;
+}
+h1{
+  color: rgb(102, 91, 91);
+}
+
+@media screen and (max-width:520px){
+  .google{
+    padding-left: 0px;
+  }
+}
